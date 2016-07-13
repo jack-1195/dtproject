@@ -1,0 +1,4 @@
+INDEX VERSION 1.127+F:\angular\.metadata\.plugins\org.eclipse.jdt.core
+1275304734.index
+3280149905.index
+688739505.index

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></Script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+</head>
+
+<body ng-app=""  ng-init="price=0;quantity=0">
+Price: <input type ="float" min=1 max=1000  ng-model="price"><br>
+Quantity: <input type ="float"   ng-model="quantity"><br>
+Total:{{price * quantity }}
+<p ng-bind="price*quantity"></p>
+
+</body>
+</html>

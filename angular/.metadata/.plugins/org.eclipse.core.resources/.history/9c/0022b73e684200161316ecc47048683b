@@ -1,0 +1,19 @@
+package com.niit.exception;
+
+public class ExpectionDemo {
+	public double divide(int x ,int y)
+	{
+		try {
+			return x/y;
+		} catch (ArithmeticException e) {
+		System.out.print("The denominator should not be zero");
+		y=1;
+			//e.printStackTrace();
+		}
+		return x/y;
+	}
+	 
+	
+	
+
+}

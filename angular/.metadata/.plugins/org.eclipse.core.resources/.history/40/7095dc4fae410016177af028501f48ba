@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></Script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+Please select category
+<select ng-model="selectName" ng-options="category for category in categories">
+</select>
+</div>
+<script>
+var app = angular.module('myApp',[]);
+app.controller('myctrl',function($scope){
+	$scope.categories =[ "Keyboards","Pianos","Flutes","Guitars"];
+
+	});
+</script>
+
+</body>
+</html>

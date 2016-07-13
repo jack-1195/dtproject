@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></Script>s
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form ng app="" name="myform">
+
+Email:<br>
+<input type="email" name="myaddress" ng-mode"text">
+<span> ng - show ="myform:myAddress,$error,email"> not a valid email address</span>
+</form>
+
+
+</body>
+</html>

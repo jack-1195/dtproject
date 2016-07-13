@@ -1,0 +1,18 @@
+package com.niit.exception;
+
+public class ExpectionDemo {
+	public double divide(int x ,int y)
+	{
+		
+			return x/y;
+		
+	}
+	 
+	
+	public static void main(String[] args){
+		ExpectionDemo e= new ExpectionDemo();
+		System.out.println( args[0]);
+		//System.out.println( e.divide(10,0));
+	}
+
+}

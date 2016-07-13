@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></Script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="shoppingCart"  ng-controller="productController">
+{{productName}}
+
+</body>
+<script type="text/javascript">
+
+</script>
+</html>
