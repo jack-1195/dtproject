@@ -1,0 +1,9 @@
+package com.niit.shopingcart.dao;
+
+
+public interface AccountDAO {
+	public Account get(String id);
+	public boolean trasfer(String id, int amount);
+
+
+}

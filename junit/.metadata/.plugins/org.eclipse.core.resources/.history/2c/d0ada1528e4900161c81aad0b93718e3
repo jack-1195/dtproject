@@ -1,0 +1,33 @@
+package com.niit.shopingcart.test;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.niit.shopingcart.dao.CartDAO;
+import com.niit.shopingcart.dao.CategoryDAO;
+import com.niit.shopingcart.model.Category;
+import com.niit.shopingcart.model.Product;
+
+public class Cart {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shopingcart");
+		context.refresh();
+		
+	Cart c =(Cart)	  context.getBean("cart");
+	
+	CartDAO cartDAO = (CartDAO)  context.getBean("cartDAO");
+	}
+	
+	
+	
+	
+	
+	
+
+

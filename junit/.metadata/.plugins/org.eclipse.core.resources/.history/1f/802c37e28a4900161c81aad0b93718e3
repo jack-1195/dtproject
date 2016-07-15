@@ -1,0 +1,39 @@
+package com.bank.controller;
+
+
+
+@Controller
+public class PaymentController {
+
+	@Autowired(required = true)
+	private CartDAO cartDAO;
+
+	@Autowired(required = true)
+	private AccountDAO accountDAO;
+	
+	@RequestMapping("product/get/{id}")
+	public String addToCart(@PathVariable("userID") String userID, Model model) {
+
+		int totalAmount = cartDAO.getTotalAmount(userID);
+			ModelAndView mv = new ModelAndView();
+			String message;
+			if( accountDAO.trasfer(userID, totalAmount))
+			{
+				message = "Successfully done the transaction";
+				
+			}
+			else
+			{
+				message = "Sorry,  not able to do the transaction now. Please try after some time.";
+			}
+			mv.addObject("trsactionMessage", message);
+			return "redirect:/home";
+			//return "redirect:/uploadFile";
+
+		
+		
+	}
+
+	
+}
+
